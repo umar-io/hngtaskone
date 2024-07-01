@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  width: 80%;
+  height: 70px;
+  background-color: #fff;
+  padding: 10px 30px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+header h3 {
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #000;
+}
+
+header div.time {
+  background-color: #000;
+  width: fit-content;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+div.time:hover {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #000;
+}
+
+main {
+  width: 80%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .left {
+  width: 50%;
+  height: 100%;
+}
+
+main .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+main .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+}
+
+main .right .goals {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h3 {
+  color: #c3c3c3;
+  font-weight: 200;
+}
+
+main .right .links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .right .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links ul li a {
+  color: #000;
+  text-decoration: underline;
+}
+
+ul li {
+  list-style: circle;
+  transition: 0.5s ease-in;
+  font-size: 16px;
+  font-weight: 100;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+ul li:hover {
+  list-style: disc;
+}
+
+
+
+main .time {
+  width: fit-content;
+  padding: 8px 20px;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.day {
+  width: fit-content;
+  padding: 8px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (max-width: 768px) {
+  main {
+    height: fit-content;
+    flex-direction: column;
+    padding: 20px 20px;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  main .right{
+    width: 100%;
+  }
+
+  main .left {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
