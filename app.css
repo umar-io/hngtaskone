@@ -161,6 +161,7 @@ footer {
 
 @media (max-width: 768px) {
   main {
+    width: 100%;
     height: fit-content;
     flex-direction: column;
     padding: 20px 20px;
