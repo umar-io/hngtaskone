@@ -32,12 +32,13 @@ header h3 {
   color: #000;
 }
 
-.calender{
+.calender {
   display: flex;
   gap: 20px;
 }
 
-header div.time , div.day {
+header div.time,
+div.day {
   background-color: #000;
   width: fit-content;
   color: #fff;
@@ -47,7 +48,8 @@ header div.time , div.day {
   transition: 0.5s ease-in;
 }
 
-div.time:hover , div.day:hover {
+div.time:hover,
+div.day:hover {
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   color: #000;
@@ -109,11 +111,11 @@ main .right .links {
   gap: 20px;
 }
 
-main .right .contact{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+main .right .contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .links ul li a {
@@ -166,7 +168,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header {
+    width: 90%;
+    padding: 10px 10px;
+  }
+
+  .calender {
+    display: flex;
+    gap: 10px;
+  }
+
   main {
+    width: 90%;
     height: fit-content;
     flex-direction: column;
     padding: 20px 20px;
@@ -174,7 +187,7 @@ footer {
     gap: 40px;
   }
 
-  main .right{
+  main .right {
     width: 100%;
   }
 
