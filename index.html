@@ -8,13 +8,19 @@
   </head>
   <body>
     <header>
-      <h3 id="slackDisplayName">Umar Irale</h3>
-      <div class="time" id="time"></div>
+      <h3 id="slackDisplayName" data-testid="slackDisplayName">Umar Irale</h3>
+      <div class="calender">
+        <div class="time" data-testid="currentTimeUTC"></div>
+        <div class="day" data-testid="currentDay"></div>
+      </div>
     </header>
     <main>
-      <div class="day" id="day"></div>
       <section class="left">
-        <img src="slackpp.jpg" alt="slackProfilePicture" id="slackProfilePicture" />
+        <img
+          src="slackpp.jpg"
+          alt="slackProfilePicture"
+          data-testid="slackProfilePicture"
+        />
       </section>
       <section class="right">
         <div class="goals">
@@ -30,27 +36,31 @@
           <h3>Useful Links</h3>
           <ul>
             <li>
-              <a href="http://hng.tech/learn" target="_blank" id="hngLink"
+              <a href="http://hng.tech/learn" target="_blank" data-testid="hngLink"
                 >HNG Learn</a
               >
             </li>
             <li>
-              <a href="http://keyword.dog"  target="_blank" id="keywordLink"
+              <a href="http://keyword.dog" target="_blank" data-testid="keywordLink"
                 >Key Word</a
               >
             </li>
             <li>
-              <a href="http://scrapeanyweb.site"  target="_blank" id="scrapeanywebLink"
+              <a
+                href="http://scrapeanyweb.site"
+                target="_blank"
+                data-testid="scrapeanywebLink"
+
                 >Web scrap</a
               >
             </li>
           </ul>
         </div>
         <div class="contact">
-            <h3>Get In touch</h3>
-            <ul>
-                <li><p id="slackEmail">mailpersonal725@gmail.com</p></li>
-            </ul>
+          <h3>Get In touch</h3>
+          <ul>
+            <li><p data-testid="slackEmail">mailpersonal725@gmail.com</p></li>
+          </ul>
         </div>
       </section>
     </main>
